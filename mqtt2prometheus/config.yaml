@@ -1,0 +1,26 @@
+---
+name: MQTT2Prometheus
+version: dev
+slug: mqtt2prometheus
+description: MQTT to Prometheus gateway
+url: https://github.com/christian-vdz/hassio-mqtt2prometheus-addon
+webui: http://[HOST]:[PORT:9641]
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+ports:
+  9641/tcp: 9641
+ports_description:
+  9641/tcp: Web interface
+options:
+  mqtt:
+    server: "127.0.0.1"
+    user: "mqtt"
+    password: ""
+schema:
+  mqtt:
+    server: "str?"
+    user: "str?"
+    password: "password"

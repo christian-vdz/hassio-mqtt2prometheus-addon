@@ -1,0 +1,9 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: MQTT2Prometheus
+# Starts MQTT2Prometheus
+# ==============================================================================
+bashio::log.info "Starting MQTT2Prometheus..."
+
+exec /usr/bin/mqtt2prometheus
