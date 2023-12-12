@@ -1,0 +1,4 @@
+---
+name: "Home Assistant Add-on: MQTT2Prometheus"
+url: https://github.com/christian-vdz/hassio-mqtt2prometheus-addon
+maintainer: christian-vdz

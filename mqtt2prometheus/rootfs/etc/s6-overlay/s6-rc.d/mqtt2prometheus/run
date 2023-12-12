@@ -1,0 +1,47 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: MQTT2Prometheus
+# Starts MQTT2Prometheus
+# ==============================================================================
+declare -a options
+declare log_level
+
+bashio::log.info "Starting MQTT2Prometheus..."
+
+options+=(--config /etc/mqtt2prometheus/config.yaml)
+
+log_level="info"
+if bashio::config.exists 'log_level'; then
+    case "$(bashio::string.lower "$(bashio::config 'log_level')")" in
+        all|trace)
+            log_level="trace"
+            ;;
+        debug)
+            log_level="debug"
+            ;;
+        info|notice)
+            log_level="info"
+            ;;
+        warning)
+            log_level="warn"
+            ;;
+        error)
+            log_level="Eerror"
+            ;;
+        fatal|off)
+            log_level="critical"
+            ;;
+    esac
+fi
+options+=(--log-level ${log_level})
+
+# Load custom environment variables
+for var in $(bashio::config 'env_vars|keys'); do
+    name=$(bashio::config "env_vars[${var}].name")
+    value=$(bashio::config "env_vars[${var}].value")
+    bashio::log.info "Setting ${name} to ${value}"
+    export "${name}=${value}"
+done
+
+exec /usr/bin/mqtt2prometheus "${options[@]}"
