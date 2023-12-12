@@ -1,0 +1,9 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: cAdvisor
+# Starts cAdvisor
+# ==============================================================================
+bashio::log.info "Starting cAdvisor..."
+
+exec /usr/bin/cadvisor
