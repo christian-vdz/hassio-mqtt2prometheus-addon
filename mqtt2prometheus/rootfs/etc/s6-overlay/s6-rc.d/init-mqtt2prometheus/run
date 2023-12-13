@@ -20,3 +20,8 @@ if bashio::config.has_value 'mqtt_password'; then
   mqtt_password=$(bashio::config 'mqtt_password')
   sed -i "s#%%password%%#${mqtt_password}#g" "${CONFIG}"
 fi
+
+if bashio::config.has_value 'mqtt_base_topic'; then
+  mqtt_base_topic=$(bashio::config 'mqtt_base_topic')
+  sed -i "s#%%base_topic%%#${mqtt_base_topic}#g" "${CONFIG}"
+fi
