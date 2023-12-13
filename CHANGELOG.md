@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.1.4](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.3...v0.1.4) (2023-12-13)
+
+
+### Bug Fixes
+
+* **addon:** fix init mqtt2prometheus ([0e1576f](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/commit/0e1576fa59ffd9083ac8352283d2b3a23a5dc2f6))
+
 ## [0.1.3](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.2...v0.1.3) (2023-12-13)
 
 
