@@ -16,9 +16,12 @@ MQTT2Prometheus add-on for Home-Assistant
 
 ## About
 
-MQTT2Prometheus blabla
+MQTT2Prometheus is an exportes that translates MQTT topics to Prometheus metrics.
+The core design is that clients send arbitrary JSON messages on the topics. The translation between the MQTT representation and Prometheus metrics is configured in the mqtt2prometheus exporter since we often can not change the IoT devices sending the messages. Clients can push metrics via MQTT to an MQTT Broker. This exporter subscribes to the broker and expose the received messages as prometheus metrics.
 
-[Read the full add-on documentation](https://github.com/hikhvar/mqtt2prometheus)
+![Overview Diagram](https://github.com/hikhvar/mqtt2prometheus/blob/master/docs/overview.drawio.svg)
+
+[Read MQTT2Prometheus's documentation](https://github.com/hikhvar/mqtt2prometheus)
 
 ## License
 

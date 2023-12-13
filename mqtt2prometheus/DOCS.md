@@ -1,6 +1,11 @@
 # Home Assistant Community Add-on: MQTT2Prometheus
 
-MQTT2Prometheus blabla
+MQTT2Prometheus is an exportes that translates MQTT topics to Prometheus metrics.
+The core design is that clients send arbitrary JSON messages on the topics. The translation between the MQTT representation and Prometheus metrics is configured in the mqtt2prometheus exporter since we often can not change the IoT devices sending the messages. Clients can push metrics via MQTT to an MQTT Broker. This exporter subscribes to the broker and expose the received messages as prometheus metrics.
+
+![Overview Diagram](https://github.com/hikhvar/mqtt2prometheus/blob/master/docs/overview.drawio.svg)
+
+[Read MQTT2Prometheus's documentation](https://github.com/hikhvar/mqtt2prometheus)
 
 ## Installation
 
@@ -13,12 +18,22 @@ comparison to installing any other Home Assistant add-on.
 4. Add this repository: https://github.com/christian-vdz/hassio-mqtt2prometheus-addon
 5. Search for the "MQTT2Prometheus" add-on in the Supervisor add-on store an
    install it.
-6. Start the "MQTT2Prometheus" add-on.
-7. Click the "OPEN WEB UI" button to open MQTT2Prometheus.
+6. Configure the addon with your MQTT server IP, credentials and base topic
+7. Start the "MQTT2Prometheus" add-on.
+8. Click the "OPEN WEB UI" button to open MQTT2Prometheus.
 
 ## Configuration
 
-You can configure the listen port for MQTT2Prometheus web socket (default 9641).
+On configuration tab you will find the following settings:
+
+| Setting | Description | Default | Mandatory |
+| --- | --- | --- | --- |
+| mqtt_server | IP address of your MQTT Server | "127.0.0.1" | Yes |
+| mqtt_user | Your MQTT user | "mqtt" | Yes |
+| mqtt_password | Your MQTT user's password | "" | Yes |
+| mqtt_base_topic | Your MQTT base topic | "zigbee2mqtt" | Yes|
+
+You can also configure the listen port for MQTT2Prometheus's web socket (default 9641).
 
 ## Changelog & Releases
 
