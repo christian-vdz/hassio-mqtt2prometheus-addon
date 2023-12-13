@@ -1,6 +1,6 @@
 ---
 name: MQTT2Prometheus
-version: 0.1.4
+version: 0.1.5
 slug: mqtt2prometheus
 description: MQTT to Prometheus gateway
 url: https://github.com/christian-vdz/hassio-mqtt2prometheus-addon
@@ -18,11 +18,13 @@ options:
   mqtt_server: "127.0.0.1"
   mqtt_user: "mqtt"
   mqtt_password: ""
+  mqtt_base_topic: "zigbee2mqtt"
   env_vars: []
 schema:
   mqtt_server: "str?"
   mqtt_user: "str?"
   mqtt_password: "password"
+  mqtt_base_topic: "str?"
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   env_vars:
     - name: match(^GF_([A-Z0-9_])+$)
