@@ -1,6 +1,6 @@
 ---
 name: MQTT2Prometheus
-version: 0.1.0
+version: 0.1.1
 slug: mqtt2prometheus
 description: MQTT to Prometheus gateway
 url: https://github.com/christian-vdz/hassio-mqtt2prometheus-addon
