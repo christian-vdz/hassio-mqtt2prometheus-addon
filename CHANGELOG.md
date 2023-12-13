@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.1.3](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.2...v0.1.3) (2023-12-13)
+
+
+### Bug Fixes
+
+* **addon:** s6 init overlay ([2187b89](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/commit/2187b89df7d12c627523243a74ad0147210c95a0))
+
 ## [0.1.2](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.1...v0.1.2) (2023-12-13)
 
 
