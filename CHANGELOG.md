@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.1.8](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.7...v0.1.8) (2023-12-13)
+
+
+### Bug Fixes
+
+* **mqtt2prometheus:** expand path to many levels of hierarchy ([571767c](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/commit/571767ca0e1f677d63513f425def40dd73c20ada))
+
 ## [0.1.7](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.6...v0.1.7) (2023-12-13)
 
 
