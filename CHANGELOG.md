@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.1.7](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.6...v0.1.7) (2023-12-13)
+
+
+### Bug Fixes
+
+* **mqtt2zigbee:** replace base_topic in config file ([0bad360](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/commit/0bad36054d1ded3937af574e3696484b93f57d57))
+
 ## [0.1.6](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.5...v0.1.6) (2023-12-13)
 
 
