@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.1.6](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.5...v0.1.6) (2023-12-13)
+
+
+### Bug Fixes
+
+* **mqtt2zigbee:** config file indent ([5ef159f](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/commit/5ef159ff9fab38da078059888d6b252df36e571d))
+
 ## [0.1.5](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.4...v0.1.5) (2023-12-13)
 
 
