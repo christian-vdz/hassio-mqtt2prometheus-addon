@@ -7,13 +7,16 @@
 readonly CONFIG="/etc/mqtt2prometheus/config.yaml"
 
 if bashio::config.has_value 'mqtt_server'; then
+  mqtt_server=$(bashio::config 'mqtt_server')
   sed -i "s#%%server%%#${mqtt_server}#g" "${CONFIG}"
 fi
 
 if bashio::config.has_value 'mqtt_user'; then
+  mqtt_user=$(bashio::config 'mqtt_user')
   sed -i "s#%%user%%#${mqtt_user}#g" "${CONFIG}"
 fi
 
 if bashio::config.has_value 'mqtt_password'; then
+  mqtt_password=$(bashio::config 'mqtt_password')
   sed -i "s#%%password%%#${mqtt_password}#g" "${CONFIG}"
 fi
