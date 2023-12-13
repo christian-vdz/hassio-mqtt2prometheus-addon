@@ -15,12 +15,11 @@ ports:
 ports_description:
   9641/tcp: Web interface
 options:
-  mqtt:
-    server: "127.0.0.1"
-    user: "mqtt"
-    password: ""
+  mqtt_server: "127.0.0.1"
+  mqtt_user: "mqtt"
+  mqtt_password: ""
 schema:
-  mqtt:
-    server: "str?"
-    user: "str?"
-    password: "password"
+  mqtt_server: "str?"
+  mqtt_user: "str?"
+  mqtt_password: "password"
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
