@@ -15,7 +15,7 @@ log_level="info"
 if bashio::config.exists 'log_level'; then
     case "$(bashio::string.lower "$(bashio::config 'log_level')")" in
         all|trace)
-            log_level="trace"
+            log_level="all"
             ;;
         debug)
             log_level="debug"
