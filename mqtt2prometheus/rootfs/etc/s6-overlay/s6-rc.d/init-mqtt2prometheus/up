@@ -1,1 +1,1 @@
-/s6-rc.d/init-mqtt2prometheus/run
+/etc/s6-overlay/s6-rc.d/init-mqtt2prometheus/run
