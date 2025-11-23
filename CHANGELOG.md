@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.2.0...v0.2.1) (2025-11-23)
+
+
+### Bug Fixes
+
+* ci ([#22](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/issues/22)) ([ab413f9](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/commit/ab413f9cfabc506ffeaeef13b75c6875fdfffe33))
+
 ## [0.2.0](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.1.8...v0.2.0) (2025-11-23)
 
 ### Features
