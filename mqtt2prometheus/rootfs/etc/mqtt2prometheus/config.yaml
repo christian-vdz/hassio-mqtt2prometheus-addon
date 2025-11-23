@@ -31,7 +31,7 @@ json_parsing:
   separator: .
 # This is a list of valid metrics. Only metrics listed here will be exported
 metrics:
-    # The name of the metric in prometheus
+  # The name of the metric in prometheus
   - prom_name: temperature
     # The name of the metric in a MQTT JSON message
     mqtt_name: temperature
