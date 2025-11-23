@@ -26,12 +26,12 @@ comparison to installing any other Home Assistant add-on.
 
 On configuration tab you will find the following settings:
 
-| Setting | Description | Default | Mandatory |
-| --- | --- | --- | --- |
-| mqtt_server | IP address of your MQTT Server | "127.0.0.1" | Yes |
-| mqtt_user | Your MQTT user | "mqtt" | Yes |
-| mqtt_password | Your MQTT user's password | "" | Yes |
-| mqtt_base_topic | Your MQTT base topic | "zigbee2mqtt" | Yes|
+| Setting         | Description                    | Default       | Mandatory |
+| --------------- | ------------------------------ | ------------- | --------- |
+| mqtt_server     | IP address of your MQTT Server | "127.0.0.1"   | Yes       |
+| mqtt_user       | Your MQTT user                 | "mqtt"        | Yes       |
+| mqtt_password   | Your MQTT user's password      | ""            | Yes       |
+| mqtt_base_topic | Your MQTT base topic           | "zigbee2mqtt" | Yes       |
 
 You can also configure the listen port for MQTT2Prometheus's web socket (default 9641).
 
