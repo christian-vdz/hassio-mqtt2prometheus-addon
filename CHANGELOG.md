@@ -2,10 +2,9 @@
 
 ## [0.2.2](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.2.1...v0.2.2) (2025-11-23)
 
-
 ### Bug Fixes
 
-* apk add ([d7958ed](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/commit/d7958ed63f650894105dcc315089a553523d92a5))
+- apk add ([d7958ed](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/commit/d7958ed63f650894105dcc315089a553523d92a5))
 
 ## [0.2.1](https://github.com/christian-vdz/hassio-mqtt2prometheus-addon/compare/v0.2.0...v0.2.1) (2025-11-23)
 
