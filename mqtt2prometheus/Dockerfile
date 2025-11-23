@@ -4,7 +4,7 @@ FROM ${BUILD_FROM}
 
 # Download and install mqtt2prometheus
 ARG MQTT2PROMETHEUS_VERSION="0.1.7"
-RUN wget https://github.com/hikhvar/mqtt2prometheus/releases/download/v${MQTT2PROMETHEUS_VERSION}/mqtt2prometheus_${MQTT2PROMETHEUS_VERSION}_linux_amd64.apk -O /tmp/mqtt2prometheus.apk && \
+RUN wget --progress=dot:giga https://github.com/hikhvar/mqtt2prometheus/releases/download/v${MQTT2PROMETHEUS_VERSION}/mqtt2prometheus_${MQTT2PROMETHEUS_VERSION}_linux_amd64.apk -O /tmp/mqtt2prometheus.apk && \
     apk add --allow-untrusted /tmp/mqtt2prometheus.apk && \
     rm /tmp/mqtt2prometheus.apk
 

@@ -1,3 +1,4 @@
+---
 mqtt:
   # The MQTT broker to connect to
   server: tcp://%%server%%:1883
